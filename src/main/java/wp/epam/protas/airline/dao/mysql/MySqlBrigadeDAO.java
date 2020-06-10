@@ -78,7 +78,7 @@ public class MySqlBrigadeDAO implements BrigadeDAO {
                 + "AND employees.id=brigades_employees.employee_id ;";
         List<Employee> employees;
         try {
-            employees = new MySqlEmployeeDAO().getEmployees(sql); //// TODO: 14.03.2016 refactor this method
+            employees = new MySqlEmployeeDAO().getEmployees(sql);
         } catch (SQLException e) {
             LOG.error(Messages.ERR_CANNOT_OBTAIN_EMPLOYEES_IN_BRIGADE + brigadeId, e);
             throw new DBException(Messages.ERR_CANNOT_OBTAIN_EMPLOYEES_IN_BRIGADE + brigadeId, e);

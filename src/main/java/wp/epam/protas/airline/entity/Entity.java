@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Entity implements Serializable {
 
-    private static final long serialVersionUID = 1727160706781150493L;
     private Integer id;
 
     public Integer getId() {

@@ -5,9 +5,6 @@ import java.sql.Time;
 
 public class Flight extends Entity {
 
-
-    private static final long serialVersionUID = 4579314101060652810L;
-
     private String name;
     private String fromPort;
     private String toPort;

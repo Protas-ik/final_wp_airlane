@@ -155,7 +155,6 @@ public class MySqlFlightDAO implements FlightDAO {
         f.setTimeFlight(rs.getTime(Fields.FLIGHTS_TIME_FLIGHT));
         f.setBrigadeId(rs.getInt(Fields.FLIGHTS_BRIGADE_ID));
         f.setStatusId(rs.getInt(Fields.FLIGHTS_STATUS_ID));
-
         return f;
     }
 

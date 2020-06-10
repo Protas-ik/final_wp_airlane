@@ -2,9 +2,6 @@ package wp.epam.protas.airline.entity;
 
 public class Application extends Entity {
 
-
-    private static final long serialVersionUID = 548236071516424498L;
-
     private String message;
     private Integer brigadeId;
     private Integer statusId;

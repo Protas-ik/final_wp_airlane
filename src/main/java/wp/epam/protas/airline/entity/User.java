@@ -3,8 +3,6 @@ package wp.epam.protas.airline.entity;
 
 public class User extends Entity {
 
-    private static final long serialVersionUID = -2315211921422950548L;
-
     private String login;
     private String password;
     private String firstName;

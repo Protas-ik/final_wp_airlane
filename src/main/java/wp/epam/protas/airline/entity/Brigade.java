@@ -2,9 +2,6 @@ package wp.epam.protas.airline.entity;
 
 public class Brigade extends Entity {
 
-
-    private static final long serialVersionUID = 3513997375899440972L;
-
     private String name;
     private Integer userId;
 

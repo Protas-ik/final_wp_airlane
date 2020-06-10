@@ -5,9 +5,6 @@ import org.apache.log4j.PropertyConfigurator;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-/**
- * Created by zhenya on 06.03.2016.
- */
 public class ContextListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {

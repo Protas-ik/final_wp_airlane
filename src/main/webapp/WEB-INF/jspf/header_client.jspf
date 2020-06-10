@@ -1,0 +1,38 @@
+<%@ include file="/WEB-INF/jspf/page.jspf" %>
+<%@ include file="/WEB-INF/jspf/taglib.jspf" %>
+
+<header>
+    <div class="login">
+        <%@ include file="/WEB-INF/jspf/header.jspf" %>
+        <c:if test="${not empty user }">
+
+
+            <div>
+                <c:out value="${user.firstName } ${user.lastName }"></c:out>
+                <c:if test="${not empty userRole }">
+                    <c:out value="${userRole.name }"></c:out>
+                </c:if>
+                <a href="controller?command=logout"> Logout</a>
+            </div>
+
+        </c:if>
+        <c:if test="${empty user}">
+            <div>
+                <a href="login.jsp">Login</a>
+            </div>
+        </c:if>
+    </div>
+    <nav>
+        <div class="admin_menu">
+            <ul>
+                <li><a href="controller?command=viewBrigades">
+                    <span>View Brigades</span></a></li>
+                <li><a href="controller?command=manageStatus">
+                    <span>Manage flight status</span></a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+</header>

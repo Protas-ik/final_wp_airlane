@@ -1,0 +1,269 @@
+body {
+    background: #eee;
+    margin: 0 0 0 0;
+    font-family: Quicksand;
+}
+
+input:focus, button:focus, textarea:focus, select:focus {
+    outline: 0;
+}
+
+header {
+    background: #999;
+    height: 100px;
+}
+
+nav {
+    display: block;
+    margin: 0 auto 10px;
+
+}
+
+.admin_menu ul {
+    padding: 1em 0;
+
+}
+
+.login {
+    font-size: 14pt;
+    color: #fff;
+    float: right;
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.login a:hover {
+    color: #66ccff;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin_menu {
+
+}
+
+.admin_menu a {
+
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+    padding: 1em;
+    background: rgba(102, 204, 255, 0.1);
+    border-right: 1px solid #b19891;
+    /*color: #fff;*/
+
+}
+
+.admin_menu a:hover {
+    background: #66ccff;
+}
+
+.admin_menu li {
+    /*display: inline;*/
+    float: left;
+    font-size: 14pt;
+    margin-top: 20px;
+
+}
+
+.admin_menu li span {
+    color: #fff;
+}
+
+#wrapper {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+#wrapper section {
+    width: 350px;
+    float: left;
+    text-align: left;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 1px 2px rgba(20, 20, 20, 0.3);
+    -webkit-box-shadow: 0 0 1px 2px rgba(20, 20, 20, 0.3);
+    border-radius: 5px;
+    -moz-transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+}
+
+#wrapper section:hover {
+    -moz-box-shadow: 0 0 4px 3px #ff664a;
+    -webkit-box-shadow: 0 0 4px 3px #66ccff;
+    background: #fff;
+}
+
+#wrapper section div {
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+
+#wrapper section div .name {
+    width: 90%;
+    float: left;
+    margin: 9px 10% 43px 0;
+}
+
+#wrapper section div .password {
+    width: 90%;
+    float: left;
+    margin: 0 10% 0 0;
+}
+
+#wrapper section .inputs {
+    width: 75%;
+    float: left;
+}
+
+#wrapper section .inputs input {
+    width: 93.5%;
+    float: left;
+    padding: 10px 3%;
+    border: 1px solid #ddd;
+    margin: 0 0 20px 0;
+    font-family: Quicksand;
+    font-size: 16px;
+    border-radius: 5px;
+    background: rgba(102, 204, 255, 0.1);
+    -moz-transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+}
+
+#wrapper section .inputs input:hover {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#wrapper section input.button {
+    width: 350px;
+    padding: 15px 0;
+    border: 0px solid;
+    margin: 5px 0 0 0;
+    font-family: Quicksand;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    -moz-transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    background: #999;
+    -moz-box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.7);
+}
+
+#wrapper section input.button:hover {
+    background: #66ccff;
+}
+
+.view_content {
+    float: left;
+}
+
+.view_content caption {
+    font-size: 16pt;
+    color: #039;
+
+}
+
+.view_content th {
+    font-weight: normal;
+    color: #039;
+    padding: 5px 5px;
+    font-size: 14pt;
+}
+
+.view_content td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+    font-size: 14pt;
+}
+
+.view_content tr:nth-child(2n) {
+    background: #e8edff;
+}
+
+.view_content td .button {
+    background: #999;
+    color: #fff;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    font-size: 12pt;
+}
+
+.add_content {
+    float: right;
+    font-size: 14pt;
+    color: #039;
+    border: 2px;
+    margin: 5px 5px 0 0;
+
+}
+
+.add_content .labels {
+    float: left;
+    /*margin: 5px 5px 5px; 0;*/
+    padding-top: 6px;
+}
+
+.add_content .labels div {
+    margin: 5px 5px 5px 0;
+}
+
+.add_content .inputs {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+
+.add_content .inputs div {
+    margin: 5px 5px 5px 0;
+}
+
+.add_content input.button {
+
+    background: #999;
+    color: #fff;
+    font-size: 12pt;
+    width: 95%;
+    height: 30px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+#wrap {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.725);
+    z-index: 100;
+    overflow: auto;
+}
+
+#window {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    display: none;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+}
